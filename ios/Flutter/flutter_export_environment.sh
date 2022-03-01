@@ -1,6 +1,6 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\Users\Jesus.Pardo\fvm\versions\2.5.2"
+export "FLUTTER_ROOT=C:\Users\Jesus.Pardo\fvm\default"
 export "FLUTTER_APPLICATION_PATH=D:\Documentos\Proyectos\Platzi\Flutter\Curso-de-Flutter-Avanzado-en-Platzi"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"

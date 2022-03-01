@@ -1,39 +1,39 @@
 import 'package:flutter/material.dart';
 
 class CircleButton extends StatefulWidget {
-  bool mini;
-  var icon;
-  double iconSize;
-  var color;
+  const CircleButton(
+      {Key? key,
+      required this.mini,
+      required this.icon,
+      required this.iconSize,
+      required this.color,
+      required this.onPressed});
 
-  CircleButton(this.mini, this.icon, this.iconSize, this.color);
+  final bool mini;
+  final IconData icon;
+  final double iconSize;
+  final Color color;
+  final VoidCallback onPressed;
 
   @override
   State<StatefulWidget> createState() {
     return _CircleButton();
   }
-
 }
 
 class _CircleButton extends State<CircleButton> {
-
-  void onPressedButton() {
-
-  }
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
         child: FloatingActionButton(
-          backgroundColor: widget.color,
-          mini: widget.mini,
-          onPressed: onPressedButton,
-          child: Icon(
-            widget.icon,
-            size: widget.iconSize,
-            color: Color(0xFF4268D3),
-          ),
-        )
-    );
+      backgroundColor: widget.color,
+      mini: widget.mini,
+      onPressed: widget.onPressed,
+      child: Icon(
+        widget.icon,
+        size: widget.iconSize,
+        color: Color(0xFF4268D3),
+      ),
+    ));
   }
 }

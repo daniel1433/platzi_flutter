@@ -4,9 +4,10 @@ import 'package:platzi_trips_app/User/ui/widgets/profile_places_list.dart';
 import 'package:platzi_trips_app/User/ui/widgets/profile_background.dart';
 
 class ProfileTrips extends StatelessWidget {
+  const ProfileTrips({Key? key});
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     /*return Container(
       color: Colors.indigo,
     );*/
@@ -14,14 +15,9 @@ class ProfileTrips extends StatelessWidget {
       children: <Widget>[
         ProfileBackground(),
         ListView(
-          children: <Widget>[
-            ProfileHeader(),
-            ProfilePlacesList()
-
-          ],
+          children: <Widget>[ProfileHeader(), ProfilePlacesList()],
         ),
       ],
     );
   }
-
 }
